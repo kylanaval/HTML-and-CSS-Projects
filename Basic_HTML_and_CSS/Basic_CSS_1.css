@@ -1,0 +1,28 @@
+/* Styling the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        /* Styling the div */
+        .colored-div {
+			text-align: center;
+            background-color: #ffffff;
+            border: 2px solid #333333;
+            padding: 20px;
+            border-radius: 10px;
+            color: #2a9d8f; /* Font color */
+            font-size: 18px;
+            width: 60%;
+        }
+
+        /* Additional styling for a heading inside the div */
+        .colored-div h2 {
+            color: #e76f51; /* Different font color for heading */
+        }
+
+        /* Paragraph styling inside the div */
+        .colored-div p {
+            color: #8A2BE2; /* Another font color for paragraph */
+        }
