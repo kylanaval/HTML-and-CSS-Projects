@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kylz Food Corner</title>
+
+<style>
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(230,240,255,0.85),
+              rgba(230,240,255,0.85)),
+              url("https://images.unsplash.com/photo-1498579809087-ef1e558fd1da");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* OVAL HEADER */
+.header {
+    width: 75%;
+    margin: 40px auto;
+    background: #0d1b2a; /* Dark Navy */
+    color: #4ea8de; /* Light Blue */
+    text-align: center;
+    padding: 40px;
+    border-radius: 50% / 40%;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #1b263b; /* Navy Blue */
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #e0f2ff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4ea8de;
+}
+
+/* SECTION STYLE */
+section {
+    width: 85%;
+    margin: 30px auto;
+    padding: 40px;
+    background: rgba(30, 58, 95, 0.6); /* Transparent Blue */
+    border-radius: 15px;
+    color: white;
+}
+
+/* ABOUT TITLE */
+#about h2 {
+    text-align: center;
+    color: #4ea8de;
+    font-family: cursive;
+    font-size: 36px;
+}
+
+/* GALLERY GRID */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* VIDEO */
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* FORM */
+form {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #4ea8de;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d1b2a;
+    color: #e0f2ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- OVAL TITLE -->
+<div class="header">
+    Kylz Food Corner
+</div>
+
+<!-- NAVIGATION WITH BOOKMARK LINKS -->
+<nav>
+    <a href="#about">Home</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2>About</h2>
+    <p style="text-align:center;">
+		At <em> Kylz Food Corner</em>, <br>
+		we serve authentic <em> Filipino dishes</em> and traditional sweets made with love and rich flavors. <br> 
+		From savory favorites like <em> adobo, sinigang, pancit, and lumpia to delightful treats like leche flan and halo-halo</em>,<br>
+		every bite brings you the true taste of the Philippines.</br><br>
+		Our menu is inspired by classic home-cooked recipes that bring comfort and joy to every table. <br>
+		Whether you’re craving a hearty meal or a sweet dessert,</br> <br>
+		<em>Kylz Food Corner</em> is your go-to place for delicious <em>Filipino
+		flavors </em></br>made fresh and served with warmth.
+		<br><br>Taste the tradition. Feel at home!</br></br>
+    </p>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery">
+    <h2 style="text-align:center; color:#4ea8de;">Gallery</h2>
+    <div class="gallery">
+        <img src="./images/chicken_adobo.jpg" alt="" >
+        <img src="./images/Pancit.jpg" alt="">
+		<img src="./images/pork_adobo.jpg" alt="">
+        <img src="./images/pork_sinigang.jpg" alt="">
+        <img src="./images/lumpia.jpg" alt="">
+        <img src="./images/lechon_belly.jpg" alt="">
+		<img src="./images/leche_flan.jpg" alt="">
+		<img src="./images/halo_halo.jpg" alt="">
+		<img src="./images/black_sambo.jpg" alt="">
+    </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section id="video">
+    <h2 style="text-align:center; color:#4ea8de;">Featured Video of Cooking Crispy Lechon Belly</h2>
+    <iframe width="560" height="315"
+        src="https://youtu.be/PWjiWwKWAAY?si=VuIgciZSf08ZpHq6"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2 style="text-align:center; color:#4ea8de;">Contact</h2>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Phone Number">
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    &copy; 2026 Kylz Food Corner | All Rights Reserved
+</footer>
+
+</body>
+</html>
