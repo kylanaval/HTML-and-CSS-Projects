@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="./CSS/slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>W3Schools Assignment</title>
+    <h1 class="mt-4 display-4 text-center">Welcome to Kyla's W3Schools Assignment</h1>
+  </head>
+
+  <body>
+  <div class="container my-5">
+  <div class="text-center">
+  <h2>Bucketlist of Beautiful Places</h2>
+<p>Change image every 2 seconds:</p>
+  </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="./Img/eiffel-tower.jpg" style="width:100%">
+  <div class="text">Eiffel Tower in Paris</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="./Img/BigBen.jpeg" style="width:100%">
+  <div class="text">Big Ben of London</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="./Img/Buckingham-Palace.jpg" style="width:100%">
+  <div class="text">Buckingham Palace in London</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="./Img/Eye-of-London.jpg" style="width:100%">
+  <div class="text">The Eye of London</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="./Img/london-bridge.jpeg" style="width:100%">
+  <div class="text">London Bridge</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="./Img/stonehenge.jpg" style="width:100%">
+  <div class="text">Stonehenge in London</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="./Img/Louvre.jpg" style="width:100%">
+  <div class="text">Louvre in France</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="./Img/vatican.jpg" style="width:100%">
+  <div class="text">Vatican City</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+  </div>
+
+<!-- Inquiry-->
+ <section id="Contact">
+  <div class="container my-5">
+  <div class="text-center">
+      <form>
+          <h1 class="text-primary my-5">Sign up to connect!</h1>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+  </div>
+  </section>  
+<!-- INQUIRT-->
+
+  <div class="container my-3">
+    
+    <ul class="nav nav-inline  justify-content-center">
+      <li class="nav-item ">
+        <small><a class="nav-link" href="#">Tour Packages</a></small>
+      </li>
+      <li class="nav-item">
+          <small><a class="nav-link" href="#">KCTravels.org</a></small>
+      </li>
+      <li class="nav-item">
+          <small><a class="nav-link" href="#">Info@KCTravels.com</a></small>
+      </li>
+      <li class="nav-item">
+          <small><a class="nav-link">&copy;KC Travels&reg;</a></small>
+      </li>
+    </ul>
+   
+  </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+
+</html>
