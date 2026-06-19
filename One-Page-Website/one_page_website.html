@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Kylz Food Corner</title>
     <link rel="stylesheet" href="./CSS/one_page_website.css">
+    <script src="./JS/one_page_website.js" defer></script>
    
 </head>
 
@@ -44,24 +45,54 @@
 <!-- GALLERY SECTION -->
 <section id="gallery">
     <h2 style="text-align:center; color:#4ea8de;">Gallery</h2>
+
     <div class="gallery">
-        <img src="./images/chicken_adobo.jpg" alt="" >
-        <img src="./images/Pancit.jpg" alt="">
-		<img src="./images/pork_adobo.jpg" alt="">
-        <img src="./images/pork_sinigang.jpg" alt="">
-        <img src="./images/lumpia.jpg" alt="">
-        <img src="./images/lechon_belly.jpg" alt="">
-		<img src="./images/leche_flan.jpg" alt="">
-		<img src="./images/halo_halo.jpg" alt="">
-		<img src="./images/black_sambo.jpg" alt="">
+        <img src="./images/chicken_adobo.jpg" alt="Chicken Adobo">
+        <img src="./images/Pancit.jpg" alt="Pancit">
+        <img src="./images/pork_adobo.jpg" alt="Pork Adobo">
+        <img src="./images/pork_sinigang.jpg" alt="Pork Sinigang">
+        <img src="./images/lumpia.jpg" alt="Lumpia">
+        <img src="./images/lechon_belly.jpg" alt="Lechon Belly">
+        <img src="./images/leche_flan.jpg" alt="Leche Flan">
+        <img src="./images/halo_halo.jpg" alt="Halo-Halo">
+        <img src="./images/black_sambo.jpg" alt="Black Sambo">
     </div>
 </section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+    
+    <span class="close">&times;</span>
+
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+
+    <div class="lightbox-container">
+        <img class="lightbox-content" id="lightbox-img">
+
+        <div id="caption"></div>
+
+        <!-- Thumbnails -->
+        <div class="thumbnail-row">
+            <img class="thumb" src="./images/chicken_adobo.jpg" alt="Chicken Adobo">
+            <img class="thumb" src="./images/Pancit.jpg" alt="Pancit">
+            <img class="thumb" src="./images/pork_adobo.jpg" alt="Pork Adobo">
+            <img class="thumb" src="./images/pork_sinigang.jpg" alt="Pork Sinigang">
+            <img class="thumb" src="./images/lumpia.jpg" alt="Lumpia">
+            <img class="thumb" src="./images/lechon_belly.jpg" alt="Lechon Belly">
+            <img class="thumb" src="./images/leche_flan.jpg" alt="Leche Flan">
+            <img class="thumb" src="./images/halo_halo.jpg" alt="Halo-Halo">
+            <img class="thumb" src="./images/black_sambo.jpg" alt="Black Sambo">
+        </div>
+
+    </div>
+</div>
 
 <!-- VIDEO SECTION -->
 <section id="video">
     <h2 style="text-align:center; color:#4ea8de;">Featured Video of Cooking Crispy Lechon Belly</h2>
     <iframe width="560" height="315"
-        src="https://youtu.be/PWjiWwKWAAY?si=VuIgciZSf08ZpHq6"
+        src="https://www.youtube.com/embed/PWjiWwKWAAY""
         frameborder="0"
         allowfullscreen>
     </iframe>
