@@ -84,3 +84,104 @@ document.addEventListener("keydown", (e) => {
         lightbox.style.display = "none";
     }
 });
+
+function myFunction() {
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("numb").value.trim();
+
+    // Check if any field is empty
+    if (name === "" || email === "" || phone === "") {
+        alert("Input is incomplete. Please fill out all fields.");
+        return false; // Prevent form submission
+    }
+
+    // Check if phone number contains only digits
+    if (isNaN(phone)) {
+        alert("Phone number is not valid. Please enter numbers only.");
+        return false;
+    }
+
+    // Optional: Check phone number length
+    if (phone.length < 10 || phone.length > 15) {
+        alert("Phone number is not valid. It should be between 10 and 15 digits.");
+        return false;
+    }
+
+    alert("Form submitted successfully!");
+    return true; // Allow form submission
+}
+
+
+function openForm() {
+    document.getElementById("popupForm").style.display = "flex";
+}
+
+function closeForm() {
+    document.getElementById("popupForm").style.display = "none";
+}
+
+function submitForm() {
+    let name = document.getElementById("pname").value.trim();
+    let email = document.getElementById("pemail").value.trim();
+    let phone = document.getElementById("pphone").value.trim();
+
+    if (name === "" || email === "" || phone === "") {
+        alert("Please complete all required fields.");
+        return false;
+    }
+
+    if (isNaN(phone)) {
+        alert("Phone number is not valid.");
+        return false;
+    }
+
+    alert("Thank you! Your order/request has been submitted.");
+    closeForm();
+    return false; // prevents page refresh
+}
+
+// Open popup
+function openForm(){
+    document.getElementById("contactPopup").style.display="block";
+}
+
+// Close popup
+function closeForm(){
+    document.getElementById("contactPopup").style.display="none";
+}
+
+// Submit form
+function submitForm(){
+
+    let name=document.getElementById("name").value.trim();
+    let email=document.getElementById("email").value.trim();
+    let phone=document.getElementById("phone").value.trim();
+
+    if(name==="" || email==="" || phone===""){
+        alert("Please complete all required fields.");
+        return false;
+    }
+
+    if(isNaN(phone)){
+        alert("Phone number is not valid.");
+        return false;
+    }
+
+    alert("Thank you for contacting Kylz Food Corner!\n\nWe have received your order/request.");
+
+    closeForm();
+
+    document.querySelector("#contactPopup form").reset();
+
+    return false;
+}
+
+// Close popup when clicking outside
+window.onclick=function(event){
+    let popup=document.getElementById("contactPopup");
+
+    if(event.target===popup){
+        closeForm();
+    }
+}

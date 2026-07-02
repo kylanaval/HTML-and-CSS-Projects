@@ -5,11 +5,45 @@
     <title>Kylz Food Corner</title>
     <link rel="stylesheet" href="./CSS/one_page_website.css">
     <script src="./JS/one_page_website.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
 </head>
 
-<body>
+<!-- POPUP FORM -->
+<div id="popupForm" class="popup">
+    <div class="popup-content">
 
+        <span class="close" onclick="closeForm()">&times;</span>
+
+        <h2>Order / Delivery / Signup</h2>
+
+        <form onsubmit="return submitForm()">
+
+            <input type="text" id="pname" placeholder="Full Name" required><br><br>
+
+            <input type="email" id="pemail" placeholder="Email" required><br><br>
+
+            <input type="text" id="pphone" placeholder="Phone Number" required><br><br>
+
+            <textarea id="pmessage" placeholder="Order details / Delivery address / Signup message" required></textarea><br><br>
+
+            <label>
+                <input type="checkbox" id="promo">
+                Sign me up for promotions & great deals
+            </label>
+
+            <br><br>
+
+            <button class="animated-btn" onclick="openForm()">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+<body>
+<script>
+  document.body.classList.add('fade-out');
+</script>
 <!-- OVAL TITLE -->
 <div class="header">
     Kylz Food Corner
@@ -22,10 +56,17 @@
     <a href="#about">About</a>
     <a href="#gallery">Gallery</a>
     <a href="#video">Video</a>
-    <a href="#contact">Contact</a>
+     <!-- Onclick and ondblclick functions added to open and close the contact form -->
+    <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+
+    
    
 </nav>
 
+<button onclick="openForm()" style="display:block; margin:20px auto; padding:10px 20px; background:#4ea8de; color:white; border:none; border-radius:8px;">
+    Order / Signup / Delivery Form
+</button>
+    
 <!-- ABOUT SECTION -->
 <section id="about">
     <h2>About</h2>
@@ -98,16 +139,41 @@
     </iframe>
 </section>
 
-<!-- CONTACT SECTION -->
-<section id="contact">
-    <h2 style="text-align:center; color:#4ea8de;">Contact</h2>
-    <form>
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <input type="text" placeholder="Phone Number">
-        <button type="submit">Submit</button>
-    </form>
-</section>
+<div class="contact-btn" onclick="openForm()">
+    Contact Us
+</div>
+
+<!-- Contact Popup -->
+<div id="contactPopup" class="popup">
+    <div class="popup-content">
+
+        <span class="close-btn" onclick="closeForm()">&times;</span>
+
+        <h2>Contact Kylz Food Corner</h2>
+
+        <form onsubmit="return submitForm()">
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="email" id="email" placeholder="Email Address" required>
+
+            <input type="text" id="phone" placeholder="Phone Number" required>
+
+            <textarea id="message" placeholder="Order, Delivery Address, or Message" required></textarea>
+
+            <label>
+                <input type="checkbox" id="signup">
+                Sign me up for more great deals & promotions!
+            </label>
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
